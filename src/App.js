@@ -4,7 +4,7 @@ import FeaturedPlayListRoundedIcon from '@mui/icons-material/FeaturedPlayListRou
 import AllInclusiveRoundedIcon from '@mui/icons-material/AllInclusiveRounded';
 
 function App() {
-  // we can create custom elements using this emotion 
+  // we can create custom elements using this emotion which means txts written within these custom elemnents will have all styles as given
   // NOTE : THE VARIABLE NAMES OUT HERE FOLLOW PASCAL CASING
   const GreenButton = styled(Button)(
     {
