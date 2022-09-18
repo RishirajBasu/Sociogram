@@ -35,4 +35,24 @@ export const theme = createTheme({
       color:"green",
       }
     }
-  ) -->
+  ) 
+  The custom element is used as :
+   <GreenButton>CUSTOM Green</GreenButton>
+  -->
+
+  <!-- Adding inline style to a element:
+   <Button variant="contained" color="secondary" startIcon={<AllInclusiveRoundedIcon/>} size="large" sx={{
+        backgroundColor:"black",
+        color:"tomato",
+        // to give The on hover property
+        "&:hover":{
+          backgroundColor:"white",
+          color:"tomato",
+        },
+        // on writing the 'disabled' attribute , this style will be applied
+        "&:disabled":{
+          backgroundColor:"grey",
+          color:"white",
+        }
+
+      }}>loop</Button> -->
