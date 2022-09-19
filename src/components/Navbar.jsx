@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import MailIcon from '@mui/icons-material/Mail';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 const CustToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
@@ -12,7 +13,7 @@ const CustToolbar = styled(Toolbar)({
   backgroundColor: "#8d2412",
 });
 const Search = styled("div")(({ theme }) => ({
-  backgroundColor: "white",
+  backgroundColor:"white",
   padding: "0 10px",
   borderRadius: theme.shape.borderRadius,
   width: "25%",
@@ -23,6 +24,7 @@ const Icons = styled(Box)({
   gap:"20px"
 });
 const Navbar = () => {
+  
   const [open, setOpen]=useState(false)
   return (
     <AppBar position="sticky">
@@ -32,10 +34,11 @@ const Navbar = () => {
           variant="h6"
           sx={{ display: { xs: " none ", sm: "block" } }}
         >
-          Navbar
+        <ConnectWithoutContactIcon/>
+        Sociogram
         </Typography>
         <Search>
-          <InputBase placeholder="Search items" />
+          <InputBase sx={{color:"#ef0909"}}  placeholder="Search items" />
         </Search>
         <Icons>
           <Badge color="secondary" badgeContent={5} sx={{display:{xs:"none",sm:"block"}}}>
