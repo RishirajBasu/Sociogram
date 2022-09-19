@@ -56,3 +56,6 @@ export const theme = createTheme({
         }
 
       }}>loop</Button> -->
+
+      IMAGES IN REACT:
+      To access images in react from the src.components folder , we have to have the file in the public folder or  we have to import the image with a name if it is in the src folder.
